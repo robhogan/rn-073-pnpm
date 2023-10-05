@@ -1,3 +1,14 @@
+buildscript {
+    repositories {
+        maven {
+            url uri('../../maven-local-repo')
+        }
+    }
+    dependencies {
+        classpath 'io.github.robhogan:noderesolver:0.1.0-alpha.4'
+    }
+}
+
 rootProject.name = 'RN0730rc1'
 apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
 include ':app'

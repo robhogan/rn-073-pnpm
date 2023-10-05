@@ -45,8 +45,9 @@ gradlePlugin {
 publishing {
     repositories {
         maven {
+            // ./gradlew clean build publishAllPublicationsToLocalPluginRepositoryRepository
             name = 'localPluginRepository'
-            url = '../local-plugin-repository'
+            url = '../../maven-local-repo'
         }
     }
     publications {
